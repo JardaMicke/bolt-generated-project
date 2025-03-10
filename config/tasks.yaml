@@ -1,0 +1,29 @@
+plan_next_task:
+      description: "Určete, který úkol se bude řešit dál."
+      expected_output: "Specifikace dalšího úkolu v projektu."
+      agent: context_master
+
+    assign_context:
+      description: "Předání relevantního kontextu konkrétnímu agentovi."
+      expected_output: "Každý agent má správné informace pro práci."
+      agent: context_manager_1
+
+    generate_code:
+      description: "Vytvořit nový kód podle specifikace."
+      expected_output: "Optimalizovaný kód, připravený k review."
+      agent: code_generator
+
+    review_code:
+      description: "Analyzovat a refaktorovat kód."
+      expected_output: "Kód bez chyb a optimalizovaný pro výkon."
+      agent: code_reviewer
+
+    run_tests:
+      description: "Otestovat funkčnost nového kódu."
+      expected_output: "Výsledek testů – úspěšné/problémy."
+      agent: tester
+
+    handle_user_decision:
+      description: "Požádat uživatele o rozhodnutí, pokud je potřeba."
+      expected_output: "Odpověď od uživatele, která umožní pokračovat."
+      agent: user_communication

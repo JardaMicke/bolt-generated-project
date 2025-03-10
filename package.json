@@ -1,0 +1,11 @@
+{
+      "name": "crewai-project",
+      "version": "1.0.0",
+      "description": "CrewAI project setup",
+      "scripts": {
+            "start": "python main.py"
+      },
+      "dependencies": {
+            "crewai": "^1.0.1"
+      }
+}
